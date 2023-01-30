@@ -1,7 +1,7 @@
 // index.js
 // 获取应用实例
 const app = getApp()
-
+/*  系统原本内容 注释掉 后期有用可使用
 Page({
   data: {
     motto: 'WePaw World',
@@ -46,4 +46,9 @@ Page({
       hasUserInfo: true
     })
   }
+})
+*/
+
+Page({
+
 })

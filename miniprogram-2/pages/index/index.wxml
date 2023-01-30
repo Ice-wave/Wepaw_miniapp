@@ -1,4 +1,6 @@
 <!--index.wxml-->
+<!--  系统原本内容 注释掉 后期有用可使用
+
 <view class="container">
   <view class="userinfo">
     <block wx:if="{{canIUseOpenData}}">
@@ -19,6 +21,12 @@
   </view>
   <view class="usermotto">
     <text class="user-motto">{{motto}}</text>
+    <text class="user-motto">{{time}}</text>
   </view>
-  <text class="user-motto">{{time}}</text>
+ 
+</view>
+
+-->
+<view class="container">
+<text> 社区页（首页）</text>
 </view>

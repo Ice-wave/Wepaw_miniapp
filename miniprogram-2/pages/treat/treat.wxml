@@ -1,0 +1,4 @@
+<!--pages/treat/treat.wxml-->
+<view class='container'>
+<text>医疗页</text>
+</view>

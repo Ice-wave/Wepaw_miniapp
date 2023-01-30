@@ -1,0 +1,4 @@
+<!--pages/shop/shop.wxml-->
+<view class='container'>
+<text>商城页</text>
+</view>

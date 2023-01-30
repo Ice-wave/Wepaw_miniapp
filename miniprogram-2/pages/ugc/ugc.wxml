@@ -1,0 +1,4 @@
+<!--pages/ugc/ugc.wxml-->
+<view class='container'>
+<text>内容发布页</text>
+</view>
