@@ -2,6 +2,7 @@
   "appid": "wx655f8ca3e7e56d37",
   "compileType": "miniprogram",
   "libVersion": "2.30.0",
+  "miniprogramRoot": "miniprogram-2/",
   "packOptions": {
     "ignore": [],
     "include": []
@@ -24,5 +25,6 @@
   "editorSetting": {
     "tabIndent": "insertSpaces",
     "tabSize": 2
-  }
+  },
+  "srcMiniprogramRoot": "miniprogram-2/"
 }
