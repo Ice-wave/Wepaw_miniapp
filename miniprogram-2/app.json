@@ -5,7 +5,9 @@
     "pages/my/my",
     "pages/shop/shop",
     "pages/ugc/ugc",
-    "pages/treat/treat"
+    "pages/treat/treat",
+    "custom-tab-bar/custom-tab-bar",
+    "custom-tab-bar/index"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -14,44 +16,50 @@
     "navigationBarTextStyle": "black"
   },
   "tabBar": {
+    "custom": false,
     "color": "black",
     "selectedColor": "#BF8600",
     "borderStyle": "black",
     "backgroundColor": "white",
     "position": "bottom",
-    "list": [{
-      "pagePath": "pages/index/index",
-      "iconPath": "",
-      "selectedIconPath": "",
-      "text": "首页"
-    },
-    {
-      "pagePath": "pages/treat/treat",
-      "iconPath": "",
-      "selectedIconPath": "",
-      "text": "医疗"
-    },
-    {
-      "pagePath": "pages/ugc/ugc",
-      "iconPath": "",
-      "selectedIconPath": "",
-      "text": "发布"
-    },
-    {
-      "pagePath": "pages/shop/shop",
-      "iconPath": "",
-      "selectedIconPath": "",
-      "text": "商城"
-    },
-    {
-      "pagePath": "pages/my/my",
-      "iconPath": "",
-      "selectedIconPath": "",
-      "text": "个人中心"
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "",
+        "selectedIconPath": "",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/treat/treat",
+        "iconPath": "",
+        "selectedIconPath": "",
+        "text": "医疗"
+      },
+      {
+        "pagePath": "pages/ugc/ugc",
+        "iconPath": "",
+        "selectedIconPath": "",
+        "text": "发布"
+      },
+      {
+        "pagePath": "pages/shop/shop",
+        "iconPath": "",
+        "selectedIconPath": "",
+        "text": "商城"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "iconPath": "",
+        "selectedIconPath": "",
+        "text": "个人中心"
+      }
+    ],
+    "usingComponents": {
+      "van-button": "@vant/weapp/button/index",
+      "van-tabbar": "@vant/weapp/tabbar/index",
+      "van-tabbar-item": "@vant/weapp/tabbar-item/index"
     }
-  ]
   },
-  "style": "v2",
   "sitemapLocation": "sitemap.json",
   "lazyCodeLoading": "requiredComponents"
 }

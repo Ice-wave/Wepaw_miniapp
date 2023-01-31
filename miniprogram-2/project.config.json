@@ -29,9 +29,12 @@
     "useApiHook": true,
     "useApiHostProcess": true,
     "showShadowRootInWxmlPanel": true,
-    "packNpmManually": false,
+    "packNpmManually": true,
     "enableEngineNative": false,
-    "packNpmRelationList": [],
+    "packNpmRelationList": [      {
+      "packageJsonPath": "./package.json",
+      "miniprogramNpmDistDir": "/miniprogram-2/"
+    }],
     "minifyWXSS": true,
     "babelSetting": {
       "ignore": [],
