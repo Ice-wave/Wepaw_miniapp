@@ -17,7 +17,7 @@
   },
   "tabBar": {
     "custom": false,
-    "color": "black",
+    "color": "#000000",
     "selectedColor": "#BF8600",
     "borderStyle": "black",
     "backgroundColor": "white",
@@ -25,32 +25,32 @@
     "list": [
       {
         "pagePath": "pages/index/index",
-        "iconPath": "",
-        "selectedIconPath": "",
+        "iconPath": "icons/首页.png",
+        "selectedIconPath": "icons/首页2.png",
         "text": "首页"
       },
       {
         "pagePath": "pages/treat/treat",
-        "iconPath": "",
-        "selectedIconPath": "",
+        "iconPath": "icons/医院.png",
+        "selectedIconPath": "icons/医院2.png",
         "text": "医疗"
       },
       {
         "pagePath": "pages/ugc/ugc",
-        "iconPath": "",
-        "selectedIconPath": "",
+        "iconPath": "icons/灵感.png",
+        "selectedIconPath": "icons/灵感2.png",
         "text": "发布"
       },
       {
         "pagePath": "pages/shop/shop",
-        "iconPath": "",
-        "selectedIconPath": "",
+        "iconPath": "icons/店铺.png",
+        "selectedIconPath": "icons/店铺2.png",
         "text": "商城"
       },
       {
         "pagePath": "pages/my/my",
-        "iconPath": "",
-        "selectedIconPath": "",
+        "iconPath": "icons/我的.png",
+        "selectedIconPath": "icons/我的2.png",
         "text": "个人中心"
       }
     ],

@@ -8,6 +8,7 @@ Joke
 ---
 ## 2023/1/31更新
 引入vant组件库，具体方法 https://vant-contrib.gitee.io/vant-weapp/#/home  
+tabBar图标等引入 
 Joke  
 
 
