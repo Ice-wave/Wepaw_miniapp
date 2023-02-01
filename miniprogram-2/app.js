@@ -14,6 +14,20 @@ App({
       }
     })
   },
+  getNavHeight: function () {
+    let height = wx.getMenuButtonBoundingClientRect().top
+    if (!height) {
+      let sysinfo = wx.getSystemInfoSync()
+      let statusBarHeight = sysinfo.statusBarHeight
+      let isiOS = sysinfo.system.indexOf('iOS') > -1
+      if (!isiOS) {
+        height = statusBarHeight + 6;
+      } else {
+        height = statusBarHeight + 8;
+      }
+    }
+    return height
+  },
   globalData: {
     userInfo: null
   }
