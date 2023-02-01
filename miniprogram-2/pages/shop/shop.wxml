@@ -26,7 +26,7 @@ module.exports = {
 <view class="search bg-white">
   <navigator hover-class="none" url="/pages/search/search" class="item">
     <icon type="search" color="#c0c0c0" />
-    <view class="input">复活节画奖大赛</view>
+    <view class="input">狗粮</view>
   </navigator>
 </view>
 <scroll-view 
@@ -37,7 +37,8 @@ scroll-top="{{scrollPos}}"
 bindscroll="{{tools.onScroll}}"
 class="page-content bg-white">
   <swiper circular autoplay class="banner">
-    <swiper-item class="item bg-red">
+    <swiper-item class="item bg-orange">
+    <image></image>
     </swiper-item>
     <swiper-item class="item bg-yellow">
     </swiper-item>
@@ -55,7 +56,7 @@ class="page-content bg-white">
   <view class="vip-bar mrtop">
     <view class="item"></view>
   </view>
-  <flash-sale-bar />
+
   <view class="hot-bar mrtop">
     <view class="label">精选好物</view>
     <view class="list">

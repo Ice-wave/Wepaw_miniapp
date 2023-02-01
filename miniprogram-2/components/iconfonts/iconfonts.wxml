@@ -1,0 +1,2 @@
+<!--components/iconfonts/iconfonts.wxml-->
+<text class="iconfont icon-{{type}}" style="{{color ? 'color:' + color + ';' : '' }}{{size ? 'font-size:' + size + ';' : '' }}" />

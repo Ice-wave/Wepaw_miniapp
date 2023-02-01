@@ -14,15 +14,11 @@ Page({
     navList: [
       {
         id: 12580,
-        title: "主食"
+        title: "狗粮"
       },
       {
         id: 12580,
-        title: "零食"
-      },
-      {
-        id: 12580,
-        title: "保健品"
+        title: "猫粮"
       },
       {
         id: 12580,
