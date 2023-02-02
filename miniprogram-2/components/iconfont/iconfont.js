@@ -8,7 +8,7 @@ Component({
     color: String,
     size: String
   },
-
+  
   /**
    * 组件的初始数据
    */

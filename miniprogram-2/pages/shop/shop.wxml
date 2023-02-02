@@ -44,7 +44,7 @@ class="page-content bg-white">
     </swiper-item>
   </swiper>
   <view class="about-bar">
-    <view class="tab"><iconfont type="jiagebaohu" size="18px" /> 全球直采</view>
+    <view class="tab"><iconfont type="jiagebaohu" size="18px"/> 全球直采 </view>
     <view class="line"></view>
     <view class="tab"><iconfont type="youpinlianmeng" size="18px" /> 正品保证</view>
     <view class="line"></view>
