@@ -16,3 +16,11 @@ Joke
 相关项目链接  https://github.com/dsppman/chongjiji  
 Joke
 
+## 2023/2/2更新  
+iconfont配置方法：选择项目中 收起在线链接 旁小三角 下拉框 查看json配置  
+将unicode代码按照格式复制在iconfont.wxss中  
+如 .icon-jiagebaohu:before {
+  content: "\e603";
+}  
+对应的就是‘价格保护’图标
+Joke
