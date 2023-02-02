@@ -11,8 +11,9 @@
 }
 
 .search {
+  position:relative;
   height: 52px;
-  padding: 10px 15px;
+  padding: 10px 32px;
   box-sizing: border-box;
 }
 
@@ -20,7 +21,7 @@
   height: 100%;
   display: flex;
   background-color: rgb(241, 241, 241);
-  border-radius: 30px;
+  border-radius: 10px;
   align-items: center;
   justify-content: center;
   color: gray;
@@ -225,4 +226,12 @@
 
 .none {
   display: none;
+}
+
+.cart {
+  margin-left:400%;
+  width:38px;
+  border-radius: 10px;
+  background-color: white;
+  border-style:none;
 }

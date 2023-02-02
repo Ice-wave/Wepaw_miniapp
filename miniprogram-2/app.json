@@ -8,7 +8,8 @@
     "pages/treat/treat",
     "custom-tab-bar/index",
     "pages/shop/cart/cart",
-    "pages/shop/goods/goods"
+    "pages/shop/goods/goods",
+    "pages/search/search"
   ],
   "window": {
     "backgroundTextStyle": "light",

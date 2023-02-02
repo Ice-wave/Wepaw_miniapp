@@ -23,5 +23,12 @@ iconfont配置方法：选择项目中 收起在线链接 旁小三角 下拉框
   content: "\e603";
 }  
 对应的就是‘价格保护’图标  
-Joke
+注意iconfont项目中加入了新图标之后url也需要更新  
+在项目Unicode中复制三行url  
+同时在相应页面的json文件中加入 "usingComponents": {
+    "iconfont":"../../components/iconfont/iconfont"
+   }  
+vant组件的配置也是同理，app.json中加入似乎并不起作用  
+Joke   
+
 

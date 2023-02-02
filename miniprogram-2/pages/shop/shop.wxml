@@ -24,11 +24,17 @@ module.exports = {
 </wxs>
 
 <view class="search bg-white">
-  <navigator hover-class="none" url="/pages/search/search" class="item">
+  <navigator hover-class="none" url="../search/search" class="item">
     <icon type="search" color="#c0c0c0" />
     <view class="input">狗粮</view>
+    <view>
+    <button class='cart'><iconfont type="gouwuchekong" size="18px"/>
+    </button>
+  </view>
   </navigator>
+
 </view>
+
 <scroll-view 
 scroll-y 
 refresher-enabled 
@@ -37,7 +43,7 @@ scroll-top="{{scrollPos}}"
 bindscroll="{{tools.onScroll}}"
 class="page-content bg-white">
   <swiper circular autoplay class="banner">
-    <swiper-item class="item bg-orange">
+    <swiper-item class="item bg-blue">
     <image></image>
     </swiper-item>
     <swiper-item class="item bg-yellow">
