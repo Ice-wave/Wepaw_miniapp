@@ -11,3 +11,18 @@
   padding: 200rpx 0;
   box-sizing: border-box;
 } 
+
+page{
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+
+.page-content {
+	flex: 1;
+	height: 0;
+}
+
+

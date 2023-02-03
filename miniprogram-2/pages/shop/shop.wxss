@@ -1,4 +1,5 @@
 /* pages/shop/shop.wxss */
+@import "../../components/iconfont/iconfont.wxss";
 .mrtop {
   margin-top: 20px;
 }
@@ -12,6 +13,7 @@
 
 .search {
   position:relative;
+  right:6%;
   height: 52px;
   padding: 10px 32px;
   box-sizing: border-box;
@@ -43,8 +45,8 @@
 
 .vip-bar {
   padding: 0 0 30px 25px;
-  background-image: linear-gradient(to bottom,white 40%, rgb(254, 105, 124) 40%);
-  box-shadow: 0 8px 10px -10px rgba(254, 105, 124, 0.7);
+  background-image: linear-gradient(to bottom,white 40%,#BF8600);
+  box-shadow: 0 8px 10px -10px #b48005;
 }
 
 .vip-bar .item {
@@ -98,12 +100,13 @@
 
 .nav-bar {
   position: sticky;
-  top: 0;
+  top: -1px;
   display: flex;
   justify-content: space-around;
   background-color: white;
   box-shadow: 0 3px 10px -10px rgba(128, 128, 128, 0.8);
   white-space: nowrap;
+  
 }
 
 .nav-bar .item {
@@ -114,12 +117,12 @@
   position: relative;
   top: 4px;
   height: 2px;
-  background-color: #fe697c;
+  background-color: #BF8600;
   border-radius: 10px;
 }
 
 .nav-bar .active {
-  color: #fe697c;
+  color: #BF8600;
   font-weight: bold;
 }
 
@@ -177,6 +180,7 @@
 }
 
 .content .list .item .tags .tag {
+
   padding: 1px 3px;
   border-radius: 5px;
 }
@@ -188,7 +192,7 @@
 }
 
 .content .list .item .price .current {
-  color: var(--red);
+  color: #BF8600;
   padding: 2px 5px;
   font-weight: bold;
   font-size: large;
@@ -229,9 +233,16 @@
 }
 
 .cart {
-  margin-left:400%;
-  width:38px;
+  position:relative;
+  left:160px;
+  box-sizing: border-box;
   border-radius: 10px;
-  background-color: white;
-  border-style:none;
+  background-color:white;
+
+}
+.cart::after {
+  border: none;
+}
+.swiper-container{
+  height: calc(100vh - 52px);
 }

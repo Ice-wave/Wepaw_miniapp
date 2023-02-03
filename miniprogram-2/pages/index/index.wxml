@@ -27,6 +27,11 @@
 </view>
 
 -->
-<view class="container">
-<text> 社区页（首页）</text>
+
+
+<view class='search'>
+  <button class='item' bindtap="goToSearchPage">搜索</button>
+  <text> 社区页（首页）</text>
 </view>
+
+

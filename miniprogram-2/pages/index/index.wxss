@@ -17,3 +17,20 @@
 .usermotto {
   margin-top: 200px;
 }
+
+.search {
+  
+  height: 52px;
+  padding: 10px 32px;
+  box-sizing: border-box;
+}
+
+.search .item {
+  height: 100%;
+  display: flex;
+  background-color: rgb(241, 241, 241);
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+  color: gray;
+}

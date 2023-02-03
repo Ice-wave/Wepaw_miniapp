@@ -28,7 +28,7 @@ module.exports = {
     <icon type="search" color="#c0c0c0" />
     <view class="input">狗粮</view>
     <view>
-    <button class='cart'><iconfont type="gouwuchekong" size="18px"/>
+    <button class='cart' bindtap="goToCartPage" ><iconfont type="gouwuchekong" color="#BF8600" size="18px" />
     </button>
   </view>
   </navigator>
@@ -41,14 +41,19 @@ refresher-enabled
 scroll-with-animation
 scroll-top="{{scrollPos}}"
 bindscroll="{{tools.onScroll}}"
-class="page-content bg-white">
+class="page-content bg-white"
+>
+
   <swiper circular autoplay class="banner">
-    <swiper-item class="item bg-blue">
-    <image></image>
-    </swiper-item>
     <swiper-item class="item bg-yellow">
+    <image src="../../images/商品促销.png" bindload="autoImage" style="width:{{imageWidth}};height:{{ imageHeight }}"  ></image>
+    </swiper-item>
+    <swiper-item class="item bg-red">
+      <image src="../../images/猫狗双全.png" bindload="autoImage" style="width:{{imageWidth}};height:{{ imageHeight }}"  ></image>
     </swiper-item>
   </swiper>
+
+
   <view class="about-bar">
     <view class="tab"><iconfont type="jiagebaohu" size="18px"/> 全球直采 </view>
     <view class="line"></view>
@@ -57,16 +62,22 @@ class="page-content bg-white">
     <view class="tab"><iconfont type="15tianwuliyoutuihuo" size="18px"  /> 售后无忧</view>
     <view class="line"></view>
     <view class="tab"><iconfont type="zhengpinbaozhang" size="18px" /> 假一赔三</view>
-  
   </view>
+
+
   <view class="vip-bar mrtop">
-    <view class="item"></view>
+    <view class="item">
+      <image src="../../images/猫咪.png" style="width:150px;height:150px" ></image>
+      <image src="../../images/猫咪.png" style="width:150px;height:150px" ></image>
+    </view>
   </view>
 
   <view class="hot-bar mrtop">
     <view class="label">精选好物</view>
     <view class="list">
-      <view class="item first"></view>
+      <view class="item first">
+        
+      </view>
       <view class="item"></view>
       <view class="item"></view>
     </view>
@@ -77,27 +88,39 @@ class="page-content bg-white">
       <view class="item" wx:for="{{'111111111'}}"></view>
     </view>
   </view>
-  <view class="container bg-xhs mrtop">
+
+  <view class="mrtop">
     <view class="nav-bar">
       <view class="item {{index === active ?'active' : ''}}" wx:for="{{navList}}" bindtap="switchTab" data-index="{{index}}">
         {{item.title}}
         <view class="line" wx:if="{{index === active}}"></view>
       </view>
     </view>
+
     <view class="content">
       <view class="list">
         <view class="item" wx:for="{{'1111111111'}}">
           <view class="pic"></view>
+          <view class="info">
+            <view class="title">NIKEE 猫猫运动服</view>
+            <view class="sub">超低价</view>
+            <view class="price">
+              <view class="current">69</view>
+              <view class="original">269</view>
+            </view>
+          </view>
         </view>
       </view>
+        
+      
       <view class="list">
         <view class="item" wx:for="{{'1111111111'}}">
           <view class="pic"></view>
           <view class="info">
-            <view class="title">演示商品演示商品演示商品演示商品演示商品演示商品演示商品演示商品演示商品</view>
-            <view class="sub">演示商品演示商品演示商品演示商品演示商品演示商品演示商品演示商品演示商品演示商品演示商品</view>
+            <view class="title">Adibas 狗狗球鞋</view>
+            <view class="sub">劲爆价格，火热出售</view>
             <view class="tags">
-              <view class="tag bg-red">新品</view>
+              <view class="tag bg-theme">新品</view>
             </view>
             <view class="price">
               <view class="current">99</view>
@@ -109,6 +132,4 @@ class="page-content bg-white">
     </view>
   </view>
 </scroll-view>
-<view class="back-top none" bindtap="backTop"><iconfont type="up" size="25px" /></view>
-
-<view class="page-tabbar page-ipx-safe-area"></view>
+<view class="back-top none" bindtap="backTop"><iconfont type="xiangshang_jiantou" size="25px" /></view>

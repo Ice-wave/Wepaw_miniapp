@@ -51,4 +51,11 @@ Page({
 
 Page({
 
+
+
+  goToSearchPage: function(param){
+    wx.navigateTo({
+      url: '../search/search',
+      })
+  }
 })

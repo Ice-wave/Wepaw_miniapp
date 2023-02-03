@@ -1,7 +1,7 @@
 // pages/shop/shop.js
 
-const app = getApp()
-var scrollTop = 0
+//const app = getApp()
+//var scrollTop = 0
 
 Page({
 
@@ -14,15 +14,15 @@ Page({
     navList: [
       {
         id: 12580,
-        title: "狗粮"
+        title: "健康"
       },
       {
         id: 12580,
-        title: "猫粮"
+        title: "主食"
       },
       {
         id: 12580,
-        title: "清洁"
+        title: "零食"
       },
       {
         id: 12580,
@@ -31,6 +31,10 @@ Page({
       {
         id: 12580,
         title: "服饰"
+      },
+      {
+        id: 12580,
+        title: "日用"
       },
     ]
   },
@@ -104,6 +108,42 @@ Page({
   backTop() {
     this.setData({
       scrollPos: 0
+    })
+  },
+  goToCartPage(){
+    wx.navigateTo({
+      url: './cart/cart',
+      })
+  },
+  goToGoodsPage(){
+    wx.navigateTo({
+      url: './goods/goods',
+      })
+  },
+  autoImage : function(e) {
+    var that = this;
+    var  originalWidth  = e.detail.width;
+    var originalHeight = e.detail.height;
+    var imageWidth = 0;
+    var imageHeight = 0;
+    wx.getSystemInfo({
+      complete: (res) => {
+        var winWidth = res.windowWidth;
+        if (originalWidth > winWidth) {
+          var autoWidth = winWidth;
+          var autoHeight = originalHeight * ratio;
+          var ratio = 375.2 / 150; // banner ratio
+          imageWidth = autoWidth + 'px';
+         imageHeight = autoHeight + 'px';
+        } else {
+          imageWidth = originalWidth + 'px';
+          imageHeight = originalHeight + 'px';
+        }
+        that.setData({
+          imageWidth: imageWidth,
+          imageHeight: imageHeight
+        });
+      }
     })
   }
 })

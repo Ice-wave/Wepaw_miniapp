@@ -1,3 +1,4 @@
 {
-  "usingComponents": { "van-button": "@vant/weapp/button/index"}
+  "usingComponents": { "van-button": "@vant/weapp/button/index",
+"iconfont":"../../components/iconfont/iconfont"}
 }
