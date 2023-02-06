@@ -1,1 +1,28 @@
 /* pages/ugc/ugc.wxss */
+@import "../../components/iconfont/iconfont.wxss";
+.mrtop {
+  margin-top: 20px;
+}
+
+.hot-bar {
+  padding: 15px;
+}
+
+.hot-bar .list {
+  padding-top: 15px;
+  display: grid;
+  grid-auto-flow: column;
+  gap: 15px;
+}
+
+.hot-bar .list .first {
+  grid-row-start: 1;
+  grid-row-end: 3;
+  height: 300px;
+}
+
+.hot-bar .list .item {
+  box-shadow: 5px 5px 10px -10px #808080;
+  background-color: rgb(220, 220, 220);
+  border-radius: 10px;
+}

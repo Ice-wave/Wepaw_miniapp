@@ -1,4 +1,11 @@
 <!--pages/ugc/ugc.wxml-->
-<view class='container'>
-<text>内容发布页</text>
-</view>
+<view class="hot-bar mrtop">
+    <view class="label">灵感发布</view>
+    <view class="list">
+      <view class="item first">
+        分享爱宠
+      </view>
+      <view class="item">WePaw市集</view>
+      <view class="item">WePaw Meta</view>
+    </view>
+  </view>

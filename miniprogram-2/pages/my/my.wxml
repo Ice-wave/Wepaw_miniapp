@@ -5,9 +5,7 @@
   </view>
   <view class="container">
     <view class="bar1">
-      <view class="avatar">
       <image class="avatar" src="../../images/高启强.jpg" />
-      </view>
       <view class="user">
         <view class="name">高启强</view>
         <view class="sub">打给老默，我要吃鱼！</view>
@@ -16,34 +14,34 @@
     </view>
     <view class="bar2">
       <view class="item">
-        <view class="num">63</view>
+        <view class="num">789</view>
         粉丝
       </view>
       <view class="item">
-        <view class="num">286</view>
+        <view class="num">26</view>
         动态
       </view>
       <view class="item">
-        <view class="num">59</view>
+        <view class="num">5</view>
         关注
       </view>
     </view>
     <view class="label">我的订单</view>
     <view class="bar3">
       <view class="item">
-        <image class="ico" src=""></image>
+        <iconfont type="daifukuan" color="black" size="25px"  />
         <view>待付款</view>
       </view>
       <view class="item">
-        <image class="ico" src=""></image>
+        <iconfont type="daifahuo" color="black" size="25px"  />
         <view>待发货</view>
       </view>
       <view class="item">
-        <image class="ico" src=""></image>
+        <iconfont type="yifahuo" color="black" size="25px"  />
         <view>待收货</view>
       </view>
       <view class="item">
-        <image class="ico" src=""></image>
+        <iconfont type="yiwancheng" color="black" size="25px"  />
         <view>待评价</view>
       </view>
     </view>
@@ -53,9 +51,9 @@
       <view class="item"></view>
     </view>
     <view class="list">
-      <view class="item"><iconfont type="favorite" class="ico" size="20px" />我的收藏</view>
-      <view class="item"><iconfont type="comment" class="ico" size="20px" />我的评论</view>
-      <view class="item"><iconfont type="share" class="ico" size="20px" />我的分享</view>
+      <view class="item"><iconfont type="shoucang" class='ico' size="20px" />我的收藏</view>
+      <view class="item"><iconfont type="pinglun"  class='ico'size="20px" />我的评论</view>
+      <view class="item"><iconfont type="fenxiang"  class='ico'size="20px" />我的分享</view>
     </view>
   </view>
 </scroll-view>
