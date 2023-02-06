@@ -5,12 +5,14 @@
   </view>
   <view class="container">
     <view class="bar1">
-      <view class="avatar"></view>
-      <view class="user">
-        <view class="name">六月飞霜</view>
-        <view class="sub">珍惜现在 音节未来</view>
+      <view class="avatar">
+      <image class="avatar" src="../../images/高启强.jpg" />
       </view>
-      <view class="card"><iconfont type="saoyisao" size="25px" color="white" /></view>
+      <view class="user">
+        <view class="name">高启强</view>
+        <view class="sub">打给老默，我要吃鱼！</view>
+      </view>
+      <view class="card"><iconfont type="saoyisao" color="#fff" size="25px"  /></view>
     </view>
     <view class="bar2">
       <view class="item">

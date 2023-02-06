@@ -28,7 +28,7 @@ module.exports = {
     <icon type="search" color="#c0c0c0" />
     <view class="input">狗粮</view>
     <view>
-    <button class='cart' bindtap="goToCartPage" ><iconfont type="gouwuchekong" color="#BF8600" size="18px" />
+    <button class='cart' bindtap="goToCartPage" ><iconfont type="gouwuchekong"  size="18px" />
     </button>
   </view>
   </navigator>
