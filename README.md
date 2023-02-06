@@ -37,4 +37,9 @@ Joke
 调整主题色 theme 详情参考color.wxss  
 Joke
 
+## 2023/2/6更新  
+修改iconfont图标不能更改颜色的bug  
+加入发布页  
+功能待定  
+Joke
 
