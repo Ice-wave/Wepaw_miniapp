@@ -72,9 +72,12 @@
 }
 
 .buy-bar .item .list .ico {
-  padding: 0 10px;
+  padding: 0 15px;
 }
-
+.buy-bar .line {
+  width: 1px;
+  background-color: rgb(220, 220, 220);
+}
 .buy-bar .item .list .fl {
   flex: 1;
 }

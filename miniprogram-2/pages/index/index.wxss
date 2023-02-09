@@ -21,16 +21,146 @@
 .search {
   
   height: 52px;
-  padding: 10px 32px;
+  padding: 5px 32px;
   box-sizing: border-box;
 }
 
 .search .item {
-  height: 100%;
+  height: 80%;
   display: flex;
   background-color: rgb(241, 241, 241);
   border-radius: 10px;
   align-items: center;
   justify-content: center;
   color: gray;
+}
+
+
+.nav-bar {
+  z-index: 1;
+  box-shadow: 0 5px 10px -10px var(--gray);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.nav-bar .tab-list .tab {
+  padding:10px 32px;
+  display: inline-block;
+}
+
+.nav-bar .tab-list .active {
+  font-weight: bold;
+  color: black;
+}
+
+.nav-bar .tab-line {
+  background-color: #BF8600;
+  width: 40px;
+  height: 3px;
+  border-radius: 30px;
+  transition-duration: 0.3s;
+  -webkit-transition-duration: 0.3s;   
+  display: inline-block;
+}
+
+
+.content {
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 10px;
+  background-color: rgb(241, 241, 241);
+}
+
+.content .list {
+  display: grid;
+  row-gap: 10px;
+}
+
+.content .list .item {
+  background-color: white;
+  border-radius: 6px;
+  box-shadow: 3px 3px 10px -10px rgba(128, 128, 128, 0.8);
+  overflow: hidden;
+}
+
+.content .list .item .pic {
+  height: 170px;
+  width:172px;
+  background-color: white;
+}
+
+.content .line {
+  height: 1px;
+  background-color: rgb(220, 220, 220);
+}
+
+.content .list .item .pic2 {
+  height: 160px;
+  width:180px;
+  background-color:white;
+}
+
+.content .list .item .info {
+  padding: 10px;
+}
+
+.content .list .item .title {
+  color: black;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+.content .list .item .sub {
+  margin-top: 3px;
+  font-size: small;
+
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+.content .list .item .tags {
+  margin-top: 5px;
+  font-size: x-small;
+  color: white;
+  display: flex;
+}
+
+.content .list .item .tags .tag {
+
+  padding: 1px 3px;
+  border-radius: 5px;
+}
+
+.content .list .item .price {
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.content .list .item .price .current {
+  color: #BF8600;
+  padding: 2px 5px;
+  font-weight: bold;
+  font-size: large;
+}
+
+.content .list .item .price .current::before {
+  content: "￥";
+  font-size: small;
+}
+
+.content .list .item .price .original {
+  font-size: small;
+  text-decoration: line-through;
+}
+
+.content .list .item .price .original::before {
+  content: "￥";
 }

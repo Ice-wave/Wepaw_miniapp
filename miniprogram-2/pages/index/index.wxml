@@ -27,11 +27,102 @@
 </view>
 
 -->
+<wxs module="tools">
+var display = false
 
+function onScroll(event, ownerInstance) {
+  var instance = ownerInstance.selectComponent('.back-top')
+  if (event.detail.scrollTop > 1000 && !display) {
+    instance.removeClass('none')
+    display = true
+  } else if (event.detail.scrollTop <= 1000 && display) {
+    display = false
+    instance.addClass('none')
+  }
+}
 
-<view class='search'>
-  <button class='item' bindtap="goToSearchPage">搜索</button>
-  <text> 社区页（首页）</text>
+module.exports = {
+  onScroll: onScroll
+}
+</wxs>
+
+<view class="bg-white search" >
+  <navigator hover-class="none" url="/pages/search/search" class="item">
+    <icon type="search" />
+    <view>最棒的狗粮</view>
+  </navigator>
 </view>
 
+<scroll-view 
+scroll-y 
+refresher-enabled 
+scroll-with-animation
+scroll-top="{{scrollPos}}"
+bindscroll="{{tools.onScroll}}"
+class="page-content bg-white"
+>
+<view class="bg-white nav-bar">
+  <view class="tab-list">
+    <view 
+    wx:for="{{list}}"
+    wx:key="index"
+    class="tab {{active === index ? 'active' : '' }}" 
+    bindtap="changeNavTab" 
+    data-index="{{index}}">
+      {{item.title}}
+    </view>
+  </view>
+  <view 
+  class="tab-line" 
+  style="transform: translateX({{pos}}px);" />
+</view>
 
+<swiper current="{{active}}" bindchange="changeNavTab" class="page-content bg-xhs">
+  <swiper-item>
+    <topic-index is-active="{{active === 0}}" />
+  </swiper-item>
+  <swiper-item>
+    <center-index is-active="{{active === 1}}" />
+  </swiper-item>
+  <swiper-item>
+    <local-index is-active="{{active === 2}}" />
+  </swiper-item>
+</swiper>
+<view class="content">
+      <view class="list">
+        <view class="item" wx:for="{{rowGridItems}}" wx:key="*this">
+          <view class="pic">
+          <image src="{{item.imgUrl}}" class='pic' />
+          </view>
+          <view class="info">
+            <view class="title">看看我家的猫猫</view>
+            <view class="sub"><image src='../../images/头像 女孩.png' style='height:18px;width:18px;padding-right: 6px;' />
+            猫猫铲屎官
+            <iconfont type="aixin" size="18px" style="padding-left:18px;" />
+            99
+            </view>
+          </view>
+        </view>
+      </view>
+   
+
+    <view class="list">
+        <view class="item" wx:for="{{rowGridItems2}}" wx:key="*this"bindtap="goToGoodsPage">
+          <view class="pic">
+            <image src="{{item.imgUrl}}" class='pic2' />
+          </view>
+          <view class="info">
+            <view class="title">这是我家的狗,怎么样可爱吧？</view>
+            <view class="sub"><image src='../../images/头像 男孩.png' style='height:18px;width:18px;padding-right: 6px;' />
+            狗子主人
+            <iconfont type="aixin" size="18px" style="padding-left:18px;" />
+            999
+            
+            
+            </view>
+          
+        </view>
+</view>
+</view>
+</view>
+</scroll-view>

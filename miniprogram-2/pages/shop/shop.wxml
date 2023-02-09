@@ -74,14 +74,16 @@ class="page-content bg-white"
 
   <view class="hot-bar mrtop">
     <view class="label">精选好物</view>
-    <view class="list">
-      <view class="item first">
-        
+    <view class="list" >
+      <view class='item first' bindtap="goToGoodsPage">
+        <image src='../../images/精选好物1.jpeg' mode='aspectFill'></image>
+        <text class='lyric'>xxx牌宠物电子相册</text>
       </view>
       <view class="item"></view>
       <view class="item"></view>
     </view>
   </view>
+
   <view class="brand-bar mrtop">
     <view class="label">国际品牌</view>
     <view class="list">
@@ -99,8 +101,10 @@ class="page-content bg-white"
 
     <view class="content">
       <view class="list">
-        <view class="item" wx:for="{{'1111111111'}}">
-          <view class="pic"></view>
+        <view class="item" wx:for="{{rowGridItems}}" wx:key="*this" bindtap="goToGoodsPage">
+          <view class="pic">
+          <image src="{{item.imgUrl}}" class='pic' />
+          </view>
           <view class="info">
             <view class="title">NIKEE 猫猫运动服</view>
             <view class="sub">超低价</view>
@@ -114,8 +118,10 @@ class="page-content bg-white"
         
       
       <view class="list">
-        <view class="item" wx:for="{{'1111111111'}}">
-          <view class="pic"></view>
+        <view class="item" wx:for="{{rowGridItems2}}" wx:key="*this"bindtap="goToGoodsPage">
+          <view class="pic">
+            <image src="{{item.imgUrl}}" class='pic2' />
+          </view>
           <view class="info">
             <view class="title">Adibas 狗狗球鞋</view>
             <view class="sub">劲爆价格，火热出售</view>

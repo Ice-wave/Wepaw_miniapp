@@ -63,20 +63,34 @@
 .hot-bar .list {
   padding-top: 15px;
   display: grid;
+  
   grid-auto-flow: column;
-  gap: 15px;
+  column-gap: 5px;
+  row-gap:10px;
+
 }
 
 .hot-bar .list .first {
   grid-row-start: 1;
   grid-row-end: 3;
   height: 300px;
+  width:fit-content;
 }
 
 .hot-bar .list .item {
   box-shadow: 5px 5px 10px -10px #808080;
-  background-color: rgb(220, 220, 220);
+  background-color: white;
   border-radius: 10px;
+  width: auto;
+}
+.hot-bar .list .lyric {
+  margin-top: 3px;
+  font-size:large;
+  font-style: bold;
+  color: black;
+  display: -webkit-box;
+  width: auto;
+  overflow: hidden;
 }
 
 .brand-bar {
@@ -131,6 +145,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 10px;
+  background-color: rgb(241, 241, 241);
 }
 
 .content .list {
@@ -147,7 +162,13 @@
 
 .content .list .item .pic {
   height: 170px;
-  background-color: rgb(220, 220, 220);
+  width:172px;
+  background-color: white;
+}
+.content .list .item .pic2 {
+  height: 170px;
+  width:180px;
+  background-color:white;
 }
 
 .content .list .item .info {

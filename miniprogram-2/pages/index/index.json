@@ -1,4 +1,6 @@
 {
   "usingComponents": { "van-button": "@vant/weapp/button/index",
-"iconfont":"../../components/iconfont/iconfont"}
+"iconfont":"../../components/iconfont/iconfont"
+},
+"disableScroll": false
 }

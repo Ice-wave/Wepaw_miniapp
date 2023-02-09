@@ -155,5 +155,12 @@ Page({
     wx.pageScrollTo({
       scrollTop: this.data.navList[index].offset
     })
-  }
+  },
+
+    goToCartPage(){
+      wx.navigateTo({
+        url: '../cart/cart',
+        })
+    }
+  
 })

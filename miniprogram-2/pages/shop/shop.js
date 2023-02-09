@@ -36,8 +36,70 @@ Page({
         id: 12580,
         title: "日用"
       },
-    ]
+    ],
+    rowGridItems: [{
+      imgUrl: "../../images/猫咪.png",
+    },
+    {
+      imgUrl: "../../images/猫咪.png",
+    },
+    {
+      imgUrl: "../../images/猫咪.png",
+    },
+    {
+      imgUrl: "../../images/猫咪.png",
+    },
+    {
+      imgUrl: "../../images/猫咪.png",
+    },
+    {
+      imgUrl: "../../images/猫咪.png",
+    },
+    {
+      imgUrl: "../../images/猫咪.png",
+    },
+    {
+      imgUrl: "../../images/猫咪.png",
+    },
+    {
+      imgUrl: "../../images/猫咪.png",
+    },
+    {
+      imgUrl: "../../images/猫咪.png",
+    },
+    {
+      imgUrl: "../../images/猫咪.png",
+    },
+  ],
+  rowGridItems2: [{
+    imgUrl: "../../images/小狗.png",
   },
+  {
+    imgUrl: "../../images/小狗.png",
+  },{
+    imgUrl: "../../images/小狗.png",
+  },{
+    imgUrl: "../../images/小狗.png",
+  },{
+    imgUrl: "../../images/小狗.png",
+  },{
+    imgUrl: "../../images/小狗.png",
+  },{
+    imgUrl: "../../images/小狗.png",
+  },{
+    imgUrl: "../../images/小狗.png",
+  },
+  {
+    imgUrl: "../../images/小狗.png",
+  },
+  {
+    imgUrl: "../../images/小狗.png",
+  },
+]
+
+   
+}, 
+
 
   /**
    * 生命周期函数--监听页面加载

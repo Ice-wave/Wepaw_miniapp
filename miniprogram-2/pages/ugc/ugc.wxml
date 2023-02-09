@@ -2,10 +2,12 @@
 <view class="hot-bar mrtop">
     <view class="label">灵感发布</view>
     <view class="list">
-      <view class="item first">
-        分享爱宠
-      </view>
+     
+        
+      <view class="list.first">分享爱宠</view>
       <view class="item">WePaw市集</view>
-      <view class="item">WePaw Meta</view>
+      <view class="item2">WePaw Meta</view>
+     
+    
     </view>
   </view>

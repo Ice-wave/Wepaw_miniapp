@@ -51,11 +51,83 @@ Page({
 
 Page({
 
+  data: {
+    active: 1,
+    pos: 0,
+    scrollPos: 0,
+    
+    list: [
+      {
+        title: "市集",
+        pos: -100,
+      },
+      {
+        title: "社区",
+        pos: -3,
+      },
+      {
+        title: "Meta",
+        pos: 98,
+      },
+    ],
+    rowGridItems: [{
+      imgUrl: "../../images/猫咪.png",
+    },
+    {
+      imgUrl: "../../images/猫咪.png",
+    },
+    {
+      imgUrl: "../../images/猫咪.png",
+    },
+    {
+      imgUrl: "../../images/猫咪.png",
+    },
+    {
+      imgUrl: "../../images/猫咪.png",
+    }],
 
+    rowGridItems2: [{
+      imgUrl: "../../images/小狗.png",
+    },
+    {
+      imgUrl: "../../images/小狗.png",
+    },{
+      imgUrl: "../../images/小狗.png",
+    },
+    {
+      imgUrl: "../../images/小狗.png",
+    }
+
+  
+  
+  ]
+  },
 
   goToSearchPage: function(param){
     wx.navigateTo({
       url: '../search/search',
+      })},
+  
+
+  changeNavTab(e) {
+    let index
+    if (e.detail.source == "touch") {
+      index = e.detail.current;
+    } else if (e.currentTarget.dataset.index != null) {
+      index = e.currentTarget.dataset.index
+    }
+    if (index != null && index != this.data.active) {
+      console.log("change navBar tab")
+      this.setData({
+        active: index,
+        pos: this.data.list[index].pos,
       })
+    }
+  },
+  onShow: function () {
+    if (typeof this.getTabBar === 'function' &&
+      this.getTabBar()) {
+      this.getTabBar().setData({ active: 1 })
+    }
   }
 })
