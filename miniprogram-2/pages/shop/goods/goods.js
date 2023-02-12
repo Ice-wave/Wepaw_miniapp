@@ -13,7 +13,24 @@ Page({
     navHeight: app.getNavHeight(),
     topBarState: "hidden",
     buyBarState: "show",
-    active: null
+    active: null,
+
+    isLike: true,
+    // banner
+    imgUrls: [
+      "../../../images/猫咪.png",
+      "../../../images/小狗.png",
+    ],
+    indicatorDots: true, //是否显示面板指示点
+    autoplay: true, //是否自动切换
+    interval: 3000, //自动切换时间间隔,3s
+    duration: 1000, //	滑动动画时长1s
+
+    // 商品详情介绍
+    detailImg: [
+      "../../../images/猫咪.png",
+      "../../../images/小狗.png",
+    ],
   },
 
   /**
@@ -156,7 +173,14 @@ Page({
       scrollTop: this.data.navList[index].offset
     })
   },
+  previewImage: function (e) {
+    var current = e.target.dataset.src;
 
+    wx.previewImage({
+      current: current, // 当前显示图片的http链接  
+      urls: this.data.imgUrls // 需要预览的图片http链接列表  
+    })
+  },
     goToCartPage(){
       wx.navigateTo({
         url: '../cart/cart',

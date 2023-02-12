@@ -1,5 +1,4 @@
 <!--pages/shop/goods/goods.wxml-->
-
 <view class="top-bar">
   <view class="item {{topBarState}}" style="padding-top: {{navHeight}}px;opacity: {{topBarOpacity}}">
     <view class="back"><iconfont type="back" size="22px" /></view>
@@ -9,6 +8,52 @@
     <view class="back"></view>
   </view>
 </view>
+
+ 
+  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" data-src="{{item}}" bindtap="previewImage"></image>
+    </swiper-item>
+  </block>
+  </swiper>
+  
+ 
+<view class="content">
+  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" data-src="{{item}}" bindtap="previewImage"></image>
+    </swiper-item>
+  </block>
+</swiper>
+  <view class="banner">
+    <view class="detail">
+    <text class="title">NIKEE 猫猫运动服</text>
+    <text class="price">￥69</text>
+    <view class="separate"></view>
+    <text>商品评价</text>
+    <text class="text-remark">东西还可以，好评~</text>
+    <view class="separate"></view>
+    <text>月销量</text>
+    <text class="text-remark">999+</text>
+    <view class="separate"></view>
+
+  </view>
+  </view>
+  <view id="参数" class="demo">
+  <image src='../../../images/商品促销.png'style="padding: 10%;"></image>
+  <image src="../../../images/星球.png" style="padding: 10%;"></image>
+
+  </view>
+  <view id="详情" class="demo">
+    <image src='../../../images/促销.png' style="padding: 10%;"></image>
+    <image src="../../../images/电脑.png" style="padding: 10%;"></image>
+  </view>
+  <view id="售后" class="demo"></view>
+</view>
+
+
 <view class="buy-bar">
   <view class="item {{buyBarState}}">
     <view class="list">
@@ -25,9 +70,3 @@
   </view>
 </view>
 
-<view class="content">
-  <view class="banner"></view>
-  <view id="推荐" class="demo bg-red"></view>
-  <view id="详情" class="demo bg-yellow"></view>
-  <view id="售后" class="demo bg-blue"></view>
-</view>
