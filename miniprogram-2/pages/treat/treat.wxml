@@ -1,4 +1,19 @@
 <!--pages/treat/treat.wxml-->
-<view class='container'>
-<text>医疗页</text>
+<view class="bg-white search" >
+  <navigator hover-class="none" url="/pages/search/search" class="item">
+    <icon type="search" />
+    <view>小狗拉肚子怎么办</view>
+  </navigator>
 </view>
+
+
+<view class='hot-bar'>
+<view class="list">
+     
+     <view class="list.first">线上问诊</view>
+     <view class="item">互联网医生</view>
+     <view class="item2">附近医院</view>
+    
+   
+   </view>
+  </view>

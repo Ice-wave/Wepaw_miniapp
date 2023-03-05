@@ -1,0 +1,33 @@
+<!--pages/index/components/community/community.wxml-->
+
+
+
+<view class="content">
+  <swiper indicator-dots="{{indicatorDots}}">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" data-src="{{item}}" bindtap="previewImage"></image>
+    </swiper-item>
+  </block>
+</swiper>
+  <view class="banner">
+    <view class="detail">
+    <text class="title">看看我家的猫猫</text>
+    <text class='subtitle'>我觉得她真的非常可爱了！！！</text>
+    <text class='text-remark'> <iconfont type="jiagebaohu" size="18px"/>2023/2/14</text>
+    <view class='separate'>
+   <view class='comment'></view>
+   <image src='../../../../images/头像 女孩.png' style='height:25px;width:25px;padding-top: 20px;padding-left: 10px;' />
+   <view class="search bg-white" >
+  <navigator hover-class="none"class="item">
+    <view>添加你的评论</view>
+  </navigator>
+</view>
+</view>
+  
+  
+    </view>
+    </view>
+  
+    </view>
+    

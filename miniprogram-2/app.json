@@ -9,7 +9,8 @@
     "custom-tab-bar/index",
     "pages/shop/cart/cart",
     "pages/shop/goods/goods",
-    "pages/search/search"
+    "pages/search/search",
+    "pages/index/components/community/community"
   ],
   "window": {
     "backgroundTextStyle": "light",

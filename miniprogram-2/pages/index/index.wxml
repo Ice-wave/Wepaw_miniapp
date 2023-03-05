@@ -90,7 +90,7 @@ class="page-content bg-white"
 </swiper>
 <view class="content">
       <view class="list">
-        <view class="item" wx:for="{{rowGridItems}}" wx:key="*this">
+        <view class="item" wx:for="{{rowGridItems}}" wx:key="*this"bindtap="goToCommPage">
           <view class="pic">
           <image src="{{item.imgUrl}}" class='pic' />
           </view>
@@ -106,8 +106,8 @@ class="page-content bg-white"
       </view>
    
 
-    <view class="list">
-        <view class="item" wx:for="{{rowGridItems2}}" wx:key="*this"bindtap="goToGoodsPage">
+    <view class="list" >
+        <view class="item" wx:for="{{rowGridItems2}}" wx:key="*this"bindtap="goToCommPage">
           <view class="pic">
             <image src="{{item.imgUrl}}" class='pic2' />
           </view>

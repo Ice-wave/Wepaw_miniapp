@@ -108,6 +108,11 @@ Page({
       url: '../search/search',
       })},
   
+  goToCommPage: function(param){
+    wx.navigateTo({
+      url: './components/community/community',
+          })},
+
 
   changeNavTab(e) {
     let index

@@ -10,14 +10,6 @@
 </view>
 
  
-  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
-  <block wx:for="{{imgUrls}}">
-    <swiper-item>
-      <image src="{{item}}" data-src="{{item}}" bindtap="previewImage"></image>
-    </swiper-item>
-  </block>
-  </swiper>
-  
  
 <view class="content">
   <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
