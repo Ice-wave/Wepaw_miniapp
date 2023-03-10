@@ -1,0 +1,141 @@
+<!--pages/ugc/pet/pet.wxml-->
+
+
+<view class="content" style="margin-top:{{navH*4+40}}rpx">
+  <view class="content-input">
+
+     <!-- 文本输入框 -->
+    <view>
+      <textarea class='text-input'
+        autofocus
+        bindinput="bindContent"
+        maxlength='200'
+        placeholder="分享您的爱宠~"
+        auto-height='{{true}}' 
+        />
+    </view>
+
+    <!-- 对于上传后的照片加以显示，可删除和添加 -->
+    <view class="image-list" wx:if="{{imageList.length > 0}}">
+      <view class="showImage box" wx:for="{{imageList}}" wx:key="item">
+        <view class="delete">
+          <image
+            src="../../../images/del.png"
+            data-imageId="{{index}}"
+            bindtap="deleteImage"
+          />
+        </view>
+        <image 
+          src="{{item}}"
+          mode="aspectFill"
+          data-imageId="{{index}}"
+          bindtap="thisImage"
+        />
+      </view>
+      <view class="addImage" wx:if="{{imageList.length < 9}}">
+        <image bindtap="chooseImage"
+          src="../../../images/plus.png"
+        />
+      </view>
+    </view>
+
+    <!-- 对上传后的视频进行展示和处理 -->
+    <view class="video box" wx:if="{{ video && video.tempFilePath }}">
+      <view class="delete">
+        <image 
+          src="../../../images/del.png"
+          data-videoId="{{index}}"
+          bindtap="deleteVideo"
+        />
+      </view>
+      <video
+        src="{{video.tempFilePath}}"
+        object-fit="cover"
+        show-fullscreen-btn="{{false}}"
+      />    
+    </view>
+
+    <!-- 上传照片和视频 -->
+    <view class="line"></view>
+    <view class="toUpload">
+
+      <!-- 图片 -->
+      <view class="uploadIcon">
+        <image
+          src="../../../images/photo.png"
+          bindtap="chooseImage" 
+        />
+      </view>
+
+      <!-- 视频 -->
+      <view class="uploadIcon">
+        <image 
+          src="../../../images/video.png"  bindtap="chooseVideo"
+        />
+      </view>
+    </view>
+
+    <view>
+      <view class="line"></view>
+      <textarea class='title-input'
+        autofocus
+        bindinput="bindContent"
+        maxlength='50'
+        placeholder="输入标题，让更多人看到！"
+        auto-height='{{true}}' 
+        />
+    </view>
+
+    <view class="line"></view>
+
+  <scroll-view scroll-x scroll-with-animation enable-flex="true" class="tag-list">
+  <block wx:for="{{obtnArry}}" >
+    <view class='label_view {{item.selected ? "active" : ""}}' data-value="{{item.name}}" bindtap='dealTap' checked="{{item.selected}}" data-index="{{index}}">
+            {{item.name}}
+    </view>
+  </block>
+</scroll-view>
+
+  <view class="input_view">
+ 
+      <view class="line"></view>
+      <textarea class='title-input'
+        autofocu
+        maxlength='50'
+        placeholder="添加更多标签"
+        auto-height='{{true}}' 
+        bindinput="bindValue"
+        />
+        
+    <button catchtap="onInputValue" class="determine_button">添加</button>
+   
+  </view>
+
+    <!-- 位置选择 -->
+    <view>
+      <view class="line"></view>
+      <view class="horizontal" bindtap="chooseLocation">
+        <view class="tag-title">
+          {{location && location.length > 0 ? location: '选择位置'}}
+        </view>
+        <image wx:if="{{location && location.length > 0}}"
+          catchtap="deleteLocation"
+          class="arrow-right"
+          src="../../../images/clear.png"
+        />
+        <image wx:if="{{ !location }}"
+          class="arrow-right" 
+          src="../../../images/arrow_right.png"
+        />
+      </view>
+    </view>
+<view class='line'></view>
+
+</view>
+</view>
+
+<view style="padding-top: 10%;">
+    <button class="determine_button2" >发布
+  
+  </button>
+  </view>

@@ -1,4 +1,4 @@
-// pages/ugc/release/release.js
+// pages/ugc/pet_meta/pet_meta.js
 Page({
 
   /**

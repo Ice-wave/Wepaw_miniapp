@@ -10,9 +10,10 @@
 <view class='hot-bar'>
 <view class="list">
      
-     <view class="list.first">线上问诊</view>
-     <view class="item">互联网医生</view>
-     <view class="item2">附近医院</view>
+     <view class="list.first" bindtap="goToAIPage">线上AI问诊</view>
+     <view class="item" bindtap="goToMapPage">附近医院</view>
+     <view class="item2" bindtap="goToDocPage">互联网医生</view>
+     
     
    
    </view>

@@ -26,3 +26,16 @@ page{
 }
 
 
+
+.line {
+  height: 1px;
+  background-color: #f8f8f8;
+  margin: 18.72rpx 0;
+}
+
+.horizontal {
+  display: flex;
+  align-items: center;
+}
+
+

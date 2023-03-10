@@ -50,10 +50,14 @@
       <view class="item"></view>
       <view class="item"></view>
     </view>
+    <view class='line'></view>
     <view class="list">
       <view class="item"><iconfont type="shoucang" class='ico' size="20px" />我的收藏</view>
+      <view class='line'></view>
       <view class="item"><iconfont type="pinglun"  class='ico'size="20px" />我的评论</view>
+      <view class='line'></view>
       <view class="item"><iconfont type="fenxiang"  class='ico'size="20px" />我的分享</view>
+      <view class='line'></view>
     </view>
   </view>
 </scroll-view>

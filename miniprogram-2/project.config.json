@@ -1,6 +1,5 @@
 {
   "description": "项目配置文件",
- 
   "packOptions": {
     "ignore": [],
     "include": []
@@ -31,10 +30,12 @@
     "showShadowRootInWxmlPanel": true,
     "packNpmManually": true,
     "enableEngineNative": false,
-    "packNpmRelationList": [      {
-      "packageJsonPath": "./package.json",
-      "miniprogramNpmDistDir": "/miniprogram-2/"
-    }],
+    "packNpmRelationList": [
+      {
+        "packageJsonPath": "./package.json",
+        "miniprogramNpmDistDir": "/miniprogram-2/"
+      }
+    ],
     "minifyWXSS": true,
     "babelSetting": {
       "ignore": [],
@@ -44,11 +45,12 @@
   },
   "compileType": "miniprogram",
   "libVersion": "2.29.2",
-  "appid": "wxabf5b2121069997d",
+  "appid": "wx655f8ca3e7e56d37",
   "projectname": "miniprogram-2",
   "condition": {},
   "editorSetting": {
     "tabIndent": "insertSpaces",
     "tabSize": 2
-  }
+  },
+  "simulatorPluginLibVersion": {}
 }

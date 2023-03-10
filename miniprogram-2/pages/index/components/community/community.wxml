@@ -14,18 +14,16 @@
     <view class="detail">
     <text class="title">看看我家的猫猫</text>
     <text class='subtitle'>我觉得她真的非常可爱了！！！</text>
-    <text class='text-remark'> <iconfont type="jiagebaohu" size="18px"/>2023/2/14</text>
+    <text class='text-remark'>2023/2/14</text>
     <view class='separate'>
-   <view class='comment'></view>
-   <image src='../../../../images/头像 女孩.png' style='height:25px;width:25px;padding-top: 20px;padding-left: 10px;' />
-   <view class="search bg-white" >
-  <navigator hover-class="none"class="item">
-    <view>添加你的评论</view>
-  </navigator>
+
+  <view class='list'>
+    <image src='../../../../images/头像 女孩.png' style='height:30px;width:30px;padding-left:10px;' />
+    <view class='tab'>添加你的评论...</view>
+    <text class='text-remark'>暂无评论，添加第一条评论吧~</text>
+  </view>
+
 </view>
-</view>
-  
-  
     </view>
     </view>
   

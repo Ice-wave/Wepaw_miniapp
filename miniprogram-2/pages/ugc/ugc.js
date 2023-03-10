@@ -62,5 +62,19 @@ Page({
    */
   onShareAppMessage() {
 
-  }
-})
+  },
+  goToPetPage: function(param){
+    wx.navigateTo({
+      url: './pet/pet',
+          })},
+
+  goToMarketPage: function(param){
+    wx.navigateTo({
+      url: './market/market',
+          })},
+  goToMetaPage: function(param){
+      wx.navigateTo({
+        url: './pet_meta/pet_meta',
+            })},
+}
+)

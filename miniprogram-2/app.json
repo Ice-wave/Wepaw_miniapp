@@ -10,7 +10,13 @@
     "pages/shop/cart/cart",
     "pages/shop/goods/goods",
     "pages/search/search",
-    "pages/index/components/community/community"
+    "pages/index/components/community/community",
+    "pages/treat/map/map",
+    "pages/treat/AI/AI",
+    "pages/treat/doctor/doctor",
+    "pages/ugc/pet/pet",
+    "pages/ugc/pet_meta/pet_meta",
+    "pages/ugc/market/market"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -64,6 +70,12 @@
       "iconfont": "./components/iconfont/iconfont"
     }
   },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示" 
+    }
+ },
+ "requiredPrivateInfos": ["getLocation", "chooseLocation", "chooseAddress"],
   "sitemapLocation": "sitemap.json",
   "lazyCodeLoading": "requiredComponents"
 }

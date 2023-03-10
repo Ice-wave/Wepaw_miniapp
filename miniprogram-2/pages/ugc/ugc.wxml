@@ -4,9 +4,9 @@
     <view class="list">
      
         
-      <view class="list.first">分享爱宠</view>
-      <view class="item">WePaw市集</view>
-      <view class="item2">WePaw Meta</view>
+      <view class="list.first" bindtap="goToPetPage">分享爱宠</view>
+      <view class="item" bindtap="goToMarketPage">WePaw市集</view>
+      <view class="item2" bindtap="goToMetaPage">WePaw Meta</view>
      
     
     </view>

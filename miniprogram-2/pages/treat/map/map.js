@@ -1,4 +1,4 @@
-// pages/treat/treat.js
+// pages/treat/map/map.js
 Page({
 
   /**
@@ -62,18 +62,5 @@ Page({
    */
   onShareAppMessage() {
 
-  },
-  goToMapPage: function(param){
-    wx.navigateTo({
-      url: './map/map',
-          })},
- goToAIPage: function(param){
-    wx.navigateTo({
-      url: './AI/AI',
-                  })},
-  goToDocPage: function(param){
-      wx.navigateTo({
-          url: './doctor/doctor',
-               })},
-
+  }
 })

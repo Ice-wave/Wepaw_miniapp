@@ -65,27 +65,29 @@ swiper-item image {
 }
 
 .detail.comment{
-  display: flex;
+
   margin-top: 3px;
   font-size: small;
-
-  
-  -webkit-box-orient: horizontal;
-  -webkit-line-clamp: 2;
+	display:flex;
+	flex-direction:row;
+	justify-content:flex-start;
   overflow: hidden;
+  width:100%;
+
+  flex-wrap: wrap;
+  padding-top: 10px;
 }
 
-
-
 .search {
-  
+  position:relative;
   height: 52px;
-  width:80%;
+  width:70%;
   padding: 5px ;
   box-sizing: border-box;
 }
 
 .search .item {
+  position:relative;
   height: 80%;
   display: flex;
   background-color: rgb(241, 241, 241);
@@ -93,4 +95,26 @@ swiper-item image {
   align-items: center;
   justify-content: center;
   color: gray;
+}
+
+.list {
+  position:relative;
+  margin-top: 3px;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 10px;
+}
+
+.tab {
+  padding-left:20px;
+  height:28px;
+  width:70%;
+  font-size: 17px;
+  
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(245, 245, 245);
+  border-radius: 20px;
+  margin: 0px 15px 10px 15px;
+
 }
