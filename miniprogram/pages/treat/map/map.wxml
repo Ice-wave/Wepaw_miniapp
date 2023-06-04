@@ -1,0 +1,25 @@
+<!--pages/treat/map/map.wxml-->
+
+<map id="map"
+    subkey="SOSBZ-BZQCG-KS4QU-Q7TGY-W664H-4TFHP"
+    enable-3D="true"
+    enable-building="true"
+    enable-overlooking="true"
+    polyline="{{polyline}}"
+    class="map"
+    show-location="true"
+    markers="{{markers}}"
+    longitude="{{longitude}}" latitude="{{latitude}}">
+  </map>
+
+  <view class="button-container">
+  <button size="mini" bindtap="myLocation">我的位置</button>
+  <button size="mini" bindtap="buttonSearch">宠物治疗/护理</button>
+  <button size="mini" bindtap="buttonSearch2">公园</button>
+  <button size="mini" bindtap="buttonDriving">算路请求</button>
+  <button size="mini" bindtap="weather">福州  /  阴转小雨  /  24~32℃  /  东北风3级
+适合穿T恤、短薄外套等夏季服装。</button>
+
+  </view>
+
+

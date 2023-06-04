@@ -1,0 +1,31 @@
+<!--pages/treat/AI/AI.wxml-->
+<view class="nav-bottom">
+<view class="img" bindtap="cut">
+    <image src='我的.png'></image>
+</view>
+<input class='ipt' placeholder='请输入文字' bindconfirm="finish" bindinput="oninput" value="{{value}}"></input>
+ <button class='btn' bindtap='click'>发送</button>
+</view>
+<!-- END输入框 -->
+
+<view class='scroll-view' scroll-y="false">
+<view class="info left">
+  <image src='我的.png' class='img'></image>
+  <view class='box'>
+    <view class='caret'></view>
+    你好，宠物助手为您服务！
+  </view>
+</view>
+
+<view class="info {{index%2 == 0? 'right' :'left'}} {{index==array.length-1?'scro':''}}" wx:for="{{array}}" wx:key="index">
+  <view class='img' wx:if="{{index%2 == 0}}">
+    <open-data type="userAvatarUrl"></open-data>
+  </view>
+  <image src="我的.png" class='img' wx:if="{{index%2 != 0}}"></image>
+ 
+  <view class='box'>
+    <view class='caret'></view>
+    {{item}}
+  </view>
+</view>
+</view>

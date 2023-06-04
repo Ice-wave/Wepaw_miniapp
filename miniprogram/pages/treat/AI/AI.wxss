@@ -1,0 +1,99 @@
+/* pages/treat/AI/AI.wxss */
+
+page{
+  width: 100%;
+  height: 100%;
+  background-color: #e3e3e3;
+}
+
+/* container */
+.scroll-view{
+  /* height: 92%; */
+  padding-top:30rpx;
+  padding-bottom:92rpx;
+}
+.info{
+  display: flex;
+  height: auto;
+  margin: 30rpx 20rpx;
+}
+.info .img{
+  width: 80rpx;
+  height: 80rpx;
+  display: block;
+}
+.info>.box{
+  text-align: justify;
+  max-width: 58%;
+  padding:10rpx 20rpx;
+  background-color: white;
+  border-radius: 10rpx;
+  position: relative;
+}
+.info>view .caret{
+  width: 0;
+  height: 0;
+  border:25rpx solid transparent;
+  position: absolute;
+  top: 13rpx;
+}
+
+.left>.box{
+  margin-left: 40rpx;
+}
+.left>.box .caret{
+   left: -45rpx;
+   border-right-color: #fff;
+}
+.right{
+  flex-direction: row-reverse;  
+}
+.right>.box{
+  margin-right: 40rpx;
+  position: relative; 
+}
+.right>view .caret{
+   right: -45rpx;
+   border-left-color: #fff;
+}
+/* END container */
+
+/* footer */
+.nav-bottom{
+  border-top: 1rpx solid #ccc;
+  background-color: #e9e9e9;
+  width: 100%;
+  height: 90rpx;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 999;
+}
+.nav-bottom>.img{
+  margin: 0 10rpx;
+  width: 50rpx;
+  height: 65rpx;
+  text-align: center;
+}
+.nav-bottom>.img>image{
+  height: 60rpx;
+  width: 60rpx;
+
+}
+.nav-bottom>.ipt{
+  width: 70%;
+  height: 65rpx;
+  padding: 10rpx;
+  border: 1rpx solid #ddd;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+.nav-bottom>.btn{
+    height: 65rpx;
+    padding: 0 20rpx;
+    line-height: 65rpx;
+    margin: 0 10rpx;
+}
